@@ -4,4 +4,4 @@ This is an Intelliigent Cooperation Tech Tree for [Foresight Institute's Tech Tr
 
 The current tree be seen at this [Github page](https://foresight-tech-tree.github.io/intelligent-coop).
 
-test
+just a test
