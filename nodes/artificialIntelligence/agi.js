@@ -110,13 +110,15 @@ export default [
             "source": "Reinforcement learning",
             "target": "Artificial General Intelligence",
             "id": "reinforcement_agi"
-        }
+        },
+        "group": "edges"
     },
     {
         "data": {
             "source": "security / alignment",
             "target": "Artificial General Intelligence",
             "id": "security_agi"
-        }
+        },
+        "group": "edges"
     },
 ];

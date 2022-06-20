@@ -8,10 +8,6 @@ const artificialIntelligence = {
     "data": {
         "id": "artificial intelligence" 
     },
-    "position": {
-        "x": 195.56340747734816,
-        "y": 484.3338177685355
-    },
     "group": "nodes"
 };
 

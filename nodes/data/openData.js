@@ -1,6 +1,6 @@
 const openData = {
     "data": {
-        "id": "Open Data",
+        "id": "open data",
         "parent": "data",
         "description": "Data which is openly accessible, exploitable and shared by anyone for any purpose.",
         "history": [
@@ -69,7 +69,7 @@ const openData = {
                 "url": "https://blog.ldodds.com/2017/05/25/where-can-you-contribute-to-open-data-yes-you/"
             },
             {
-                "name": "Starting an Open Data Initiative | Data",
+                "name": "Starting an open data Initiative | Data",
                 "url": "http://opendatatoolkit.worldbank.org/en/starting.html"        
             },
         ],
@@ -78,5 +78,13 @@ const openData = {
 };
 
 export default [
-    openData
+    openData,
+    {
+        "data": {
+            "source": "open data",
+            "target": "data sovereignty",
+            "id": "opendata_sov" 
+        },
+        "group": "edges"
+    },
 ];

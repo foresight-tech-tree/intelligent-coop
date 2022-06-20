@@ -14,7 +14,8 @@ const datasets_deeplearning = {
         "source": "Datasets",
         "target": "Deep learning",
         "id": "datasets_deeplearning"
-    }
+    },
+    "group": "edges"
 }
 
 export default [
