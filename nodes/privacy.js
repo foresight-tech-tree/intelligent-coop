@@ -10,13 +10,13 @@ const general = {
 };
 
 const privacy = [
-    { "data": { "id": "private computation"}, "position": { "x": null, "y": null }, "group": "nodes" },
+    { "data": { "id": "private computation"}, "group": "nodes" },
     zkp,
     fhe,
     mpc,
     general,
-    { "data": { "source": "zero-knowledge virtual machines", "target": general.data.id, "id": "zkvm_general" }, "position": { "x": null, "y": null }, "group": "edges" },
-    { "data": { "source": general.data.id, "target": "private artificial intelligence", "id": "priv_ai" }, "position": { "x": null, "y": null }, "group": "edges" },
+    { "data": { "source": "zero-knowledge virtual machines", "target": general.data.id, "id": "zkvm_general" }, "group": "edges" },
+    { "data": { "source": general.data.id, "target": "private artificial intelligence", "id": "priv_ai" }, "group": "edges" },
 ];
 
 export default privacy;
