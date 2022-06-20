@@ -43,6 +43,13 @@ function addParentNode(idSuffix, parent = undefined) {
 
 
 function main() {
+  const nodeStyles = {
+    "coreTech": { "color": "#CFA79D" },
+    "futureTech": { "color": "green" },
+    "application": { "color": "#9DCFA7" },
+    "challenge": { "color": "#A79DCF" },
+  };
+
   function setColor4CompoundEdge(e) {
     const collapsedEdges = e.data('collapsedEdges');
     if (doElemsMultiTypes(collapsedEdges)) {
@@ -123,6 +130,30 @@ function main() {
         style: {
           'background-color': '#ad1a66',
           'label': 'data(id)'
+        }
+      },
+      {
+        selector: 'node[nodeType="coreTech"]',
+        style: {
+          'background-color': nodeStyles["coreTech"].color,
+        }
+      },
+      {
+        selector: 'node[nodeType="futureTech"]',
+        style: {
+          'background-color': nodeStyles["futureTech"].color,
+        }
+      },
+      {
+        selector: 'node[nodeType="application"]',
+        style: {
+          'background-color': nodeStyles["application"].color,
+        }
+      },
+      {
+        selector: 'node[nodeType="challenge"]',
+        style: {
+          'background-color': nodeStyles["challenge"].color,
         }
       },
       {
