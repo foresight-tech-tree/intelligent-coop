@@ -17,6 +17,7 @@ function parseNode(node) {
         return node;
     }
 
+    let myNode = {};
     let data = {};
     data["id"] = node.data.id;
 
@@ -29,8 +30,8 @@ function parseNode(node) {
     if (node.data.history) {
         data["history"] = makeList(node.data.history);
     }
-    if (node.data.companies) {
-        data["companies"] = makeList(node.data.companies.map(parseLink));
+    if (node.data.projects) {
+        data["projects"] = makeList(node.data.projects.map(parseLink));
     }
     if (node.data.labs) {
         data["labs"] = makeList(node.data.labs.map(parseLink));
@@ -45,10 +46,13 @@ function parseNode(node) {
         data["resources"] = makeList(node.data.resources.map(parseLink));
     }
 
-    return {
-        "data": data,
-        "group": "nodes"
-    };
+    myNode["data"] = data;
+    myNode["group"] = "nodes";
+    if (node.nodeType) {
+        myNode["nodeType"] = node.nodeType;
+    }
+
+    return myNode;
 }
 
 const nodes = artificialIntelligence

@@ -128,7 +128,7 @@ function main() {
       {
         selector: 'node',
         style: {
-          'background-color': '#ad1a66',
+          // 'background-color': '#ad1a66',
           'label': 'data(id)'
         }
       },
@@ -228,13 +228,27 @@ function main() {
 
   cy.on('dblclick', 'node', function (evt) {
     document.getElementById('node-title').innerHTML = this.id();
-    document.getElementById('node-description').innerHTML = this.data('description');
-    document.getElementById('node-history').innerHTML = this.data('history');
-    document.getElementById('node-companies').innerHTML = this.data('companies');
-    document.getElementById('node-labs').innerHTML = this.data('labs');
-    document.getElementById('node-people').innerHTML = this.data('people');
-    document.getElementById('node-involvement').innerHTML = this.data('involvement');
-    document.getElementById('node-resources').innerHTML = this.data('resources');
+    if (this.data('description')) {
+      document.getElementById('node-description').innerHTML = this.data('description')
+    }
+    if (this.data('history')) {
+      document.getElementById('node-history').innerHTML = this.data('history')
+    }
+    if (this.data('projects')) {
+      document.getElementById('node-projects').innerHTML = this.data('projects')
+    }
+    if (this.data('labs')) {
+      document.getElementById('node-labs').innerHTML = this.data('labs')
+    }
+    if (this.data('people')) {
+      document.getElementById('node-people').innerHTML = this.data('people')
+    }
+    if (this.data('involvement')) {
+      document.getElementById('node-involvement').innerHTML = this.data('involvement')
+    }
+    if (this.data('resources')) {
+      document.getElementById('node-resources').innerHTML = this.data('resources')
+    }
     UIkit.offcanvas('#offcanvas-overlay').show();
   });
 
