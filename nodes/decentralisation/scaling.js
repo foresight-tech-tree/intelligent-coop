@@ -3,7 +3,7 @@ const zkrollup = {
         "id": "zkRollups",
         "parent": "scaling",
         "description": "A scaling solution that provides validity proofs for off-chain transactions.",
-        "companies": [
+        "projects": [
             {
                 "name": "zkSync",
                 "url": "https://zksync.io/"
@@ -38,7 +38,7 @@ const optimisticRollup = {
         "id": "optimistic rollups",
         "parent": "scaling",
         "description": "An optimistic scaling solution that provides fraud proofs for off-chain transactions.",
-        "companies": [
+        "projects": [
             {
                 "name": "Optimism",
                 "url": "https://www.optimism.io/"
@@ -64,7 +64,7 @@ const dataAvail = {
     "data": {
         "id": "data availability",
         "parent": "scaling",
-        "companies": [
+        "projects": [
             {
                 "name": "Celestia",
                 "url": "https://celestia.org/"
@@ -82,12 +82,12 @@ const dataAvail = {
     "nodeType": "coreTech"
 };
 
-const lightBlockchain = {
+const succinctBlockchain = {
     "data": {
-        "id": "light blockchain",
+        "id": "succinct blockchain",
         "parent": "scaling",
         "description": "A blockchain that requires only constant-size computation to validate.",
-        "companies": [
+        "projects": [
             {
                 "name": "Mina Protocol",
                 "url": "https://minaprotocol.com/"
@@ -101,10 +101,11 @@ export default [
     zkrollup,
     optimisticRollup,
     dataAvail,
-    lightBlockchain,
+    succinctBlockchain,
     { "data": {"id": "scaling", "parent": "decentralised infrastructure" }, "group": "nodes" },
-    { "data": { "source": dataAvail.data.id, "target": zkrollup.data.id, "id": "avail_rollup" }, "group": "edges" },
+    { "data": { "source": dataAvail.data.id, "target": zkrollup.data.id, "id": "avail_zkrollup" }, "group": "edges" },
+    { "data": { "source": dataAvail.data.id, "target": optimisticRollup.data.id, "id": "avail_optirollup" }, "group": "edges" },
     { "data": { "source": "zero-knowledge proofs", "target": zkrollup.data.id, "id": "zkp_zkr" }, "group": "edges" },
     { "data": { "source": "open data", "target": dataAvail.data.id, "id": "open_avail" }, "group": "edges" },
-    { "data": { "source": "recursive SNARKs", "target": lightBlockchain.data.id }, "group": "edges"}
+    { "data": { "source": "recursive SNARKs", "target": succinctBlockchain.data.id }, "group": "edges"}
 ];

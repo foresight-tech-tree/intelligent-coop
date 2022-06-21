@@ -4,7 +4,7 @@ const modularity = {
         "parent": "decentralised infrastructure",
         "description": "An architectural paradigm that separates the data availability, consensus, settlement, and execution layers."
     },
-    "companies": [
+    "projects": [
         {
             "name": "Celestia",
             "url": "https://celestia.org/"
