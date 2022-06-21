@@ -6,7 +6,7 @@ const datasets = {
         "history": [
             "1936 - First data set 'Iris data set'"
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Enigma | Data and intelligence on every small business",
                 "url": "https://enigma.com/"

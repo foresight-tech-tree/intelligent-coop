@@ -6,7 +6,7 @@ const badger = {
         "history": [
             "2019 - Release of Badger architecture"
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "GoodAI | Develop safe general artificial intelligence – as fast as possible – to help humanity and understand the universe.",
                 "url": "https://www.goodai.com/"

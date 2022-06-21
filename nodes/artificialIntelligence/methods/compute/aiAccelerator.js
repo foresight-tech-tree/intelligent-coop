@@ -11,7 +11,7 @@ const aiAccelerator = {
             "2020 - Atomically thin semiconductors",
             "2021 - Integrated photonic tensor core",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Cerebras",
                 "url": "https://cerebras.net/"

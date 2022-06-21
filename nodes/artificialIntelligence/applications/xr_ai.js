@@ -10,7 +10,7 @@ const xr_ai = {
             "2014 - Google Glass",
             "2021 - Replika launches in the Oculus store",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Google Glass",
                 "url": "https://www.google.com/glass/tech-specs/"

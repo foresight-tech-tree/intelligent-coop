@@ -9,7 +9,7 @@ const quantumComputing = {
             "1998 - Isaac Chuang, Neil Gershenfeld and Mark Kubinec created two-qubit quantum computer that could perform computations.",
             "2019 - Google AI and NASA claiming to have performed quantum computation that was infeasible on any classical computer (gets still researched if claim is valid or not)",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Google Quantum",
                 "url": "https://quantumai.google/"

@@ -6,7 +6,7 @@ const openCog = {
         "history": [
             "2008 - Founded via grant from Singularity Institute for AI and a donation from Novamente."
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Cisco - Networking, Cloud, and Cybersecurity Solutions",
                 "url": "https://www.cisco.com/"

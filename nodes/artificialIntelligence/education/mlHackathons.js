@@ -4,7 +4,7 @@ const mlHackathons = {
         "parent": "Education",
         "description": "People work in a sprint torwards a ML related problem to solve it.",
         "history": [],
-        "companies": [],
+        "projects": [],
         "labs": [],
         "people": [],
         "involvement": [

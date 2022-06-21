@@ -8,7 +8,7 @@ const microPsi = {
             "2003 - 2007 - MicroPsi 1",
             "2012 - Start MicroPsi 2",
         ],
-        "companies": [],
+        "projects": [],
         "labs": [
             {
                 "name": " MicroPsi: An Architecture for Motivated Cognition — MIT Media Lab", 

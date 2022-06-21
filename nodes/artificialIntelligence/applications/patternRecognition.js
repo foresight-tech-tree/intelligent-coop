@@ -6,7 +6,7 @@ const patternRecognition = {
         "history": [
             "1967 - Invention of nearest neighbor algorithm and begin of basic pattern recognition"
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Plantix | Diagnosis of diseases, pests and nutrient deficiencies",
                 "url": "https://plantix.net/en/"

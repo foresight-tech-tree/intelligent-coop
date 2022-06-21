@@ -8,7 +8,7 @@ const soar = {
             "1990 - Unified Theories gets published",
             "2012 - Most current and comprehensive books of Soar gets published",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "SoarTech",
                 "url": "https://soartech.com",

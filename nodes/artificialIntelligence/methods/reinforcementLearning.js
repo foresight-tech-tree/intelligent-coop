@@ -14,7 +14,7 @@ const reinforcementLearning = {
             "1992 - Implementation in board games",
             "2010s - Implementation in computer games"
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "SoftBank Robotics",
                 "url": "https://www.softbankrobotics.com/emea/en",

@@ -6,7 +6,7 @@ const progressStudies = {
         "history": [
             "2019 - Coining of term progress studies"
         ],
-        "companies": [],
+        "projects": [],
         "labs": [
             {
                 "name": "Public Library of Science",

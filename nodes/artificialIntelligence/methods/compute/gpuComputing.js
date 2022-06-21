@@ -8,7 +8,7 @@ const gpuComputing = {
             "~2001 - More popularity through programmable shaders and floating point support on graphics processors",
             "2005 - First common scientific program runs faster on GPU’s",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "NVIDIA Artificial Intelligence Computing Leadership from NVIDIA",
                 "url": "https://www.nvidia.com/en-us/"

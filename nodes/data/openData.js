@@ -9,7 +9,7 @@ const openData = {
             "2007 - While meeting of thirty thinkers aim to define concept of open public data ",
             "2009 - Nobel prize to Elinor Orstrom who showed the specificity of information commons",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "GitHub: Where the world builds software · GitHub",
                 "url": "https://github.com/"

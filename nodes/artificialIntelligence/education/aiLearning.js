@@ -7,7 +7,7 @@ const aiLearning = {
             "1980s - Designers transformed expert system design to develop systems which fullfil educational functions",
             "1990s - Emergence of second generation experts systems",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Knewton - Achievement Within Reach",
                 "url": "https://www.knewton.com/"

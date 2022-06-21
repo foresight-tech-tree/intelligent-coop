@@ -15,7 +15,7 @@ const deepLearning = {
             "2009 - Nvidia trained neural networks with GPUs and they called it the big bang of deep learning",
             "2011 - Superhuman performance in visual \n2012 - Deep learning system wins ImageNet competition. “deep learning revolution”",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Deep Instinct | Deep Learning AI Cybersecurity Platform",
                 "url": "https://www.deepinstinct.com/"

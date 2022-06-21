@@ -11,7 +11,7 @@ const languageModels = {
             "2015 - Memory based networks",
             "2018 - Pretrained language models",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "AI21 Labs",
                 "url": "https://www.ai21.com/"

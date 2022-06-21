@@ -10,7 +10,7 @@ const nars = {
             "1998 - Philadelphia University",
             "2008 - Open source version Open-NARS",
         ],
-        "companies": [],
+        "projects": [],
         "labs": [
             {
                 "name": "Temple AGI Team",

@@ -7,7 +7,7 @@ const actR = {
             "1973 - 1990 - ACT-R is the ultimate successor of a series of increasingly precise models of human cognition developed by John R. Anderson.",
             "1990 - 1998 - Release of ACT-R 4.0 (software)"
         ],
-        "companies": [],
+        "projects": [],
         "labs": [
             {
                 "name": "ACT-R",

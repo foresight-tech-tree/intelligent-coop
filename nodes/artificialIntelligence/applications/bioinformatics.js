@@ -6,7 +6,7 @@ const bioinformatics = {
         "history": [
             "1970 - Paulien Hogeweg and Ben Hesper coined it 1970"
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Isomorphic Labs | Home, Drug discovery",
                 "url": "https://www.isomorphiclabs.com/"

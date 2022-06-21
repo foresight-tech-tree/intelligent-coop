@@ -11,7 +11,7 @@ const agi = {
             "1993 - 2011 - Used successfully throughout the technology industry",
             "2011 - present Deep learning, big data and artificial general intelligence",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Vicarious",
                 "url": "https://www.vicarious.com"

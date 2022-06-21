@@ -17,7 +17,7 @@ const dataAnalysis = {
             "1970 - First time used the term 'Big Data'",
             "1999 - First use of term 'IoT'",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "www.itechart.com/solutions/big data",
                 "url": "https://www.itechart.com/solutions/big-data"

@@ -8,7 +8,7 @@ const dataMining = {
             "1990 - Term data mining appeared in database community generally with positive connotations.",
             "1996 - Usama Fayyad launched journal by Kluwer called Data Mining and Knowledge Discovery",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "WCKD RZR - Unlocking the potential of the world’s data",
                 "url": "https://www.wckdrzr.com/"
