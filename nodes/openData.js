@@ -78,7 +78,7 @@ const openData = {
             },
         ],
         "resources": [],
-        "nodeType": "coreTech"
+        "nodeType": "core"
     }
 };
 
@@ -101,7 +101,7 @@ const dataAvail = {
                 "url": "https://zkporter.io/#/"
             }
         ],
-        "nodeType": "coreTech"
+        "nodeType": "core"
     },
 };
 

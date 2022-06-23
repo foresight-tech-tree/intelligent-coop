@@ -96,6 +96,30 @@ const credit = {
     }
 };
 
+const undercollaterised = {
+    "data": {
+        "id": "undercollaterised lending markets",
+        "parent": defi.data.id,
+        "description": "Lending based on some measure of creditworthiness, as opposed to collateral.",
+        "nodeType": "challenge"
+    }
+};
+
+const commLending = {
+    "data": {
+        "id": "uncollateralised community lending",
+        "parent": defi.data.id,
+        "description": "Community-based lending practices where members of a social network agree to support one another's liabilities.",
+        "projects": [
+            {
+                "name": "Grameen Bank",
+                "url": "https://grameenbank.org/"
+            }
+        ],
+        "nodeType": "application"
+    }
+};
+
 const derivative = {
     "data": {
         "id": "decentralised derivative platforms",
@@ -166,7 +190,12 @@ export default [
     dex,
     stablecoins,
     credit,
+    undercollaterised,
+    commLending,
     derivative,
     insurance,
-    prediction
+    prediction,
+    { "data": { "source": "verifiable reputation", "target": undercollaterised.data.id, "id": "rep_under" }, "group": "edges" },
+    { "data": { "source": credit.data.id, "target": undercollaterised.data.id, "id": "rep_under" }, "group": "edges" },
+    { "data": { "source": undercollaterised.data.id, "target": commLending.data.id, "id": "rep_under" }, "group": "edges" },
 ];

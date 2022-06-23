@@ -3,7 +3,7 @@ const consensus = {
         "id": "consensus systems",
         "parent": "decentralised infrastructure",
         "description": "A mechanism for nodes to reach an agreement on the network's current state.",
-        "nodeType": "coreTech",
+        "nodeType": "core",
     }
 };
 
@@ -26,7 +26,7 @@ const pos = {
                 "url": "https://cardano.org/ouroboros/"
             }
         ],
-        "nodeType": "coreTech",
+        "nodeType": "core",
     }
 };
 
@@ -60,7 +60,7 @@ const pow = {
                 "url": "https://bitcoin.org/bitcoin.pdf"
             }
         ],
-        "nodeType": "coreTech",
+        "nodeType": "core",
     }
 };
 

@@ -100,7 +100,7 @@ const bioinformatics = {
                 "url": "https://blog.benchsci.com/startups-using-artificial-intelligence-in-drug-discovery"
             },
         ],
-        "nodeType": "coreTech",
+        "nodeType": "core",
     }
 }
 
