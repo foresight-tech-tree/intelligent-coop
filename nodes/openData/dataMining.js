@@ -1,7 +1,7 @@
 const dataMining = {
     "data": {
         "id": "Data Mining",
-        "parent": "data",
+        "parent": "open data",
         "description": "Extracting and discovering patterns in large data sets.",
         "history": [
             "1960s - Economists used terms like data fishing or data dredging to refer what they considered bad practice of analyzing data without an a-priori hypothesis.",

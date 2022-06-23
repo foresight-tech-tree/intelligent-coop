@@ -1,7 +1,11 @@
+import dataAnalysis from "./openData/dataAnalysis.js";
+import dataMining from "./openData/dataMining.js";
+import datasets from "./openData/datasets.js";
+
 const openData = {
     "data": {
         "id": "open data",
-        "parent": "data",
+        "parent": "open data",
         "description": "Data which is openly accessible, exploitable and shared by anyone for any purpose.",
         "history": [
             "1942 - Robert King Merton explained importance that result of research should be open",
@@ -74,11 +78,45 @@ const openData = {
             },
         ],
         "resources": [],
+        "nodeType": "coreTech"
     }
 };
 
+
+const dataAvail = {
+    "data": {
+        "id": "data availability",
+        "parent": "open data",
+        "projects": [
+            {
+                "name": "Celestia",
+                "url": "https://celestia.org/"
+            },
+            {
+                "name": "Polygon Avail",
+                "url": "https://polygon.technology/solutions/polygon-avail/"
+            },
+            {
+                "name": "zkPorter",
+                "url": "https://zkporter.io/#/"
+            }
+        ],
+        "nodeType": "coreTech"
+    },
+};
+
+const datasets_deeplearning = {
+    "data": {
+        "source": "Datasets",
+        "target": "Deep learning",
+        "id": "datasets_deeplearning"
+    },
+    "group": "edges"
+}
+
 export default [
     openData,
+    dataAvail,
     {
         "data": {
             "source": "open data",
@@ -87,4 +125,8 @@ export default [
         },
         "group": "edges"
     },
-];
+    datasets_deeplearning
+].concat(dataAnalysis)
+    .concat(dataMining)
+    .concat(datasets)
+    .flat();
