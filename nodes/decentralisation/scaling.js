@@ -29,8 +29,8 @@ const zkrollup = {
                 "url": "https://polygon.technology/solutions/polygon-hermez/"
             },
         ],
+        "nodeType": "application"
     },
-    "nodeType": "application"
 };
 
 const optimisticRollup = {
@@ -56,30 +56,8 @@ const optimisticRollup = {
                 "url": "https://fuel.network/"
             }
         ],
+        "nodeType": "application"
     },
-    "nodeType": "application"
-};
-
-const dataAvail = {
-    "data": {
-        "id": "data availability",
-        "parent": "scaling",
-        "projects": [
-            {
-                "name": "Celestia",
-                "url": "https://celestia.org/"
-            },
-            {
-                "name": "Polygon Avail",
-                "url": "https://polygon.technology/solutions/polygon-avail/"
-            },
-            {
-                "name": "zkPorter",
-                "url": "https://zkporter.io/#/"
-            }
-        ],
-    },
-    "nodeType": "coreTech"
 };
 
 const succinctBlockchain = {
@@ -93,19 +71,18 @@ const succinctBlockchain = {
                 "url": "https://minaprotocol.com/"
             }
         ],
+        "nodeType": "application"
     },
-    "nodeType": "application"
 };
 
 export default [
     zkrollup,
     optimisticRollup,
-    dataAvail,
     succinctBlockchain,
     { "data": {"id": "scaling", "parent": "decentralised infrastructure" }, "group": "nodes" },
-    { "data": { "source": dataAvail.data.id, "target": zkrollup.data.id, "id": "avail_zkrollup" }, "group": "edges" },
-    { "data": { "source": dataAvail.data.id, "target": optimisticRollup.data.id, "id": "avail_optirollup" }, "group": "edges" },
+    { "data": { "source": "data availability", "target": zkrollup.data.id, "id": "avail_zkrollup" }, "group": "edges" },
+    { "data": { "source": "data availability", "target": optimisticRollup.data.id, "id": "avail_optirollup" }, "group": "edges" },
     { "data": { "source": "zero-knowledge proofs", "target": zkrollup.data.id, "id": "zkp_zkr" }, "group": "edges" },
-    { "data": { "source": "open data", "target": dataAvail.data.id, "id": "open_avail" }, "group": "edges" },
+    { "data": { "source": "open data", "target": "data availability", "id": "open_avail" }, "group": "edges" },
     { "data": { "source": "recursive SNARKs", "target": succinctBlockchain.data.id }, "group": "edges"}
 ];

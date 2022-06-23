@@ -2,7 +2,8 @@ const defi = {
     "data": {
         "id": "decentralised finance (DeFi)",
         "parent": "decentralised infrastructure",
-        "description": "Financial products and services that do not rely on a central authority or middleman."
+        "description": "Financial products and services that do not rely on a central authority or middleman.",
+        "nodeType": "application",
     }
 };
 
@@ -28,7 +29,8 @@ const dex = {
                 "name": "Balancer",
                 "url": "https://balancer.fi/"
             },
-        ]
+        ],
+        "nodeType": "application",
     }
 };
 
@@ -54,7 +56,8 @@ const stablecoins = {
                 "name": "USDC",
                 "url": "https://www.circle.com/en/usdc"
             },
-        ]
+        ],
+        "nodeType": "application",
     }
 };
 
@@ -88,7 +91,8 @@ const credit = {
                 "name": "C.R.E.A.M",
                 "url": "https://cream.finance/"
             },
-        ]
+        ],
+        "nodeType": "application",
     }
 };
 
@@ -110,7 +114,8 @@ const derivative = {
                 "name": "Synthetix",
                 "url": "https://synthetix.io/"
             },
-        ]
+        ],
+        "nodeType": "application",
     }
 };
 
@@ -132,7 +137,8 @@ const insurance = {
                 "name": "Opium",
                 "url": "https://opium.finance/"
             },
-        ]
+        ],
+        "nodeType": "application",
     }
 };
 
@@ -150,7 +156,8 @@ const prediction = {
                 "name": "Polymarket",
                 "url": "https://polymarket.com/"
             }
-        ]
+        ],
+        "nodeType": "application",
     }
 }
 

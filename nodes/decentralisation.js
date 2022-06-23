@@ -8,7 +8,13 @@ import governance from './decentralisation/governance.js';
 import interop from './decentralisation/interop.js';
 
 const decentralisation = [
-    { "data": { "id": "decentralised infrastructure" }, "group": "nodes" },
+    {
+        "data": {
+            "id": "decentralised infrastructure",
+            "nodeType": "coreTech"
+        },
+        "group": "nodes"
+    },
     did,
     defi,
     desci,

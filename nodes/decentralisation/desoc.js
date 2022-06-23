@@ -1,7 +1,8 @@
 const desoc = {
     "data": {
         "id": "decentralised society (DeSoc)",
-        "parent": "decentralised infrastructure"
+        "parent": "decentralised infrastructure",
+        "nodeType": "application",
     }
 };
 
@@ -27,7 +28,8 @@ const publicGoods = {
                 "name": "Clr.fund",
                 "url": "https://clr.fund/#/"
             }
-        ]
+        ],
+        "nodeType": "application",
     }
 };
 
@@ -45,7 +47,8 @@ const socialMedia = {
                 "name": "Unirep Social",
                 "url": "https://unirep.gitbook.io/unirep-social/"
             },
-        ]
+        ],
+        "nodeType": "application",
     }
 };
 
@@ -59,7 +62,8 @@ const antiCollusion = {
                 "name": "Minimal Anti-Collusion Infrastructure (MACI)",
                 "url": "https://github.com/privacy-scaling-explorations/maci"
             }
-        ]
+        ],
+        "nodeType": "coreTech",
     }
 }
 
@@ -77,7 +81,8 @@ const voting = {
                 "name": "Snapshot",
                 "url": "https://snapshot.org/"
             },
-        ]
+        ],
+        "nodeType": "application",
     }
 }
 
@@ -91,7 +96,8 @@ const verifiableCredentials = {
                 "name": "W3C Recommendation",
                 "url": "https://www.w3.org/TR/vc-data-model/#use-cases-and-requirements"
             }
-        ]
+        ],
+        "nodeType": "coreTech",
     }
 };
 

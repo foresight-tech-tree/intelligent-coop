@@ -2,7 +2,8 @@ const modularity = {
     "data": {
         "id": "modularity",
         "parent": "decentralised infrastructure",
-        "description": "An architectural paradigm that separates the data availability, consensus, settlement, and execution layers."
+        "description": "An architectural paradigm that separates the data availability, consensus, settlement, and execution layers.",
+        "nodeType": "coreTech",
     },
     "projects": [
         {

@@ -2,7 +2,8 @@ const consensus = {
     "data": {
         "id": "consensus systems",
         "parent": "decentralised infrastructure",
-        "description": "A mechanism for nodes to reach an agreement on the network's current state."
+        "description": "A mechanism for nodes to reach an agreement on the network's current state.",
+        "nodeType": "coreTech",
     }
 };
 
@@ -24,7 +25,8 @@ const pos = {
                 "name": "Ouroboros",
                 "url": "https://cardano.org/ouroboros/"
             }
-        ]
+        ],
+        "nodeType": "coreTech",
     }
 };
 
@@ -42,7 +44,8 @@ const private_pos = {
                 "name": "Penumbra",
                 "url": "https://penumbra.zone/technology/stake"
             },
-        ]
+        ],
+        "nodeType": "frontier",
     }
 };
 
@@ -56,7 +59,8 @@ const pow = {
                 "name": "Nakamoto consensus",
                 "url": "https://bitcoin.org/bitcoin.pdf"
             }
-        ]
+        ],
+        "nodeType": "coreTech",
     }
 };
 

@@ -1,7 +1,8 @@
 const interop = {
     "data": {
         "id": "interoperability",
-        "parent": "decentralised infrastructure"
+        "parent": "decentralised infrastructure",
+        "nodeType": "coreTech",
     }
 };
 
