@@ -1,4 +1,5 @@
 import nodes from './nodes.js';
+import data from './nodes/openData.js';
 
 function readTxtFile(file, cb) {
   const fileReader = new FileReader();
@@ -44,10 +45,10 @@ function addParentNode(idSuffix, parent = undefined) {
 
 function main() {
   const nodeStyles = {
-    "coreTech": { "color": "#CFA79D" },
-    "futureTech": { "color": "green" },
-    "application": { "color": "#9DCFA7" },
-    "challenge": { "color": "#A79DCF" },
+    "coreTech": { "color": "lightgreen" },
+    "frontier": { "color": "#FFF380" },
+    "application": { "color": "lightskyblue" },
+    "challenge": { "color": "palevioletred" },
   };
 
   function setColor4CompoundEdge(e) {
@@ -98,14 +99,47 @@ function main() {
     return Object.keys(classDict).length > 1;
   }
 
+  function getWidth(node) {
+    /**
+    Calculate the width of a node given its text label `node.data(id)`
+    */
+
+    // Create element with attributes needed to calculate text size
+    const ctx = document.createElement('canvas').getContext("2d");
+    const fStyle = node.pstyle('font-style').strValue;
+    const size = node.pstyle('font-size').pfValue + 'px';
+    const family = node.pstyle('font-family').strValue;
+    const weight = node.pstyle('font-weight').strValue;
+    ctx.font = fStyle + ' ' + weight + ' ' + size + ' ' + family;
+
+    // For multiple lines, evaluate the width of the largest line
+    const lines = node.data('id').split('\n')
+    const lengths = lines.map(a => a.length);
+    const max_line = lengths.indexOf(Math.max(...lengths));
+
+    // User-defined padding
+    const padding = 30
+
+    return ctx.measureText(lines[max_line]).width + padding;
+  }
+
+  function getColor(node) {
+    var nodeType = node.data('nodeType');
+    if (nodeType) {
+      return nodeStyles[nodeType].color
+    } else {
+      return "grey"
+    }
+  }
+
   var cy = window.cy = cytoscape({
     container: document.getElementById('cy'),
 
     ready: function () {
       this.layout({
         name: 'fcose',
-        randomize: true,
-        fit: true,
+        randomize: false,
+        fit: false,
         animate: false,
       }).run();
       var api = this.expandCollapse({
@@ -128,56 +162,39 @@ function main() {
       {
         selector: 'node',
         style: {
-          // 'background-color': '#ad1a66',
-          'label': 'data(id)'
-        }
-      },
-      {
-        selector: 'node[nodeType="coreTech"]',
-        style: {
-          'background-color': nodeStyles["coreTech"].color,
-        }
-      },
-      {
-        selector: 'node[nodeType="futureTech"]',
-        style: {
-          'background-color': nodeStyles["futureTech"].color,
-        }
-      },
-      {
-        selector: 'node[nodeType="application"]',
-        style: {
-          'background-color': nodeStyles["application"].color,
-        }
-      },
-      {
-        selector: 'node[nodeType="challenge"]',
-        style: {
-          'background-color': nodeStyles["challenge"].color,
+          'label': 'data(id)',
+          'font-family': 'Courier New',
+          'background-color': getColor,
+          'text-wrap': 'wrap',
+          'text-max-width': '500px',
+          'text-halign': "center",
+          'text-valign': "center",
+          "shape": "round-rectangle",
+          'width': getWidth
         }
       },
       {
         selector: ':parent',
         style: {
-          'background-opacity': 0.333
+          'background-opacity': 0.333,
+          "shape": "round-rectangle"
         }
       },
 
       {
         selector: "node.cy-expand-collapse-collapsed-node",
         style: {
-          "background-color": "darkblue",
-          "shape": "rectangle"
+          "shape": "round-rectangle"
         }
       },
       {
         selector: 'edge',
         style: {
           'width': 3,
-          'line-color': '#ad1a66',
-          'curve-style': 'bezier',
+          'line-color': 'silver',
+          'curve-style': 'taxi',
           'target-arrow-shape': 'triangle',
-          'target-arrow-color': '#ad1a66'
+          'target-arrow-color': 'silver'
         }
       },
       {
@@ -224,7 +241,6 @@ function main() {
   });
 
   var api = cy.expandCollapse('get');
-  var elements = null;
 
   cy.on('dblclick', 'node', function (evt) {
     document.getElementById('node-title').innerHTML = this.id();
@@ -252,65 +268,12 @@ function main() {
     UIkit.offcanvas('#offcanvas-overlay').show();
   });
 
-  document.getElementById("collapseRecursively").addEventListener("click", function () {
-    api.collapseRecursively(cy.$(":selected"));
-  });
-
-  document.getElementById("expandRecursively").addEventListener("click", function () {
-    api.expandRecursively(cy.$(":selected"));
-  });
-
   document.getElementById("collapseAll").addEventListener("click", function () {
     api.collapseAll();
   });
 
   document.getElementById("expandAll").addEventListener("click", function () {
     api.expandAll();
-  });
-
-  document.getElementById("graphml-input").addEventListener("change", function (evt) {
-    //read graphML file
-    let files = evt.target.files;
-    let reader = new FileReader();
-    let contents;
-    reader.readAsText(files[0]);
-    reader.onload = function (event) {
-      contents = event.target.result;
-
-      cy.startBatch();
-      cy.elements().remove();
-      cy.graphml({ layoutBy: 'preset' });
-      cy.graphml(contents);
-      cy.endBatch();
-
-      cy.makeLayout({
-        name: 'fcose',
-        randomize: true,
-        fit: true,
-        animate: false
-      }).run();
-
-      //to be able to open the same file again
-      document.getElementById("graphml-input").value = "";
-    };
-
-  });
-
-  document.getElementById('saveAsJson').addEventListener('click', function () {
-    api.saveJson(cy.$());
-  });
-
-  document.getElementById('loadFromJson').addEventListener('click', function () {
-    const el = document.getElementById('load-from-inp');
-    el.value = '';
-    el.click();
-  });
-
-  document.getElementById('load-from-inp').addEventListener('change', function () {
-    readTxtFile(this.files[0], function (txt) {
-      cy.$().remove();
-      api.loadJson(txt);
-    })
   });
 
   document.getElementById('add-compound').addEventListener('click', function () {
