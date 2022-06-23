@@ -5,8 +5,29 @@ const did = {
     }
 };
 
+const reputation = {
+    "data": {
+        "id": "verifiable reputation",
+        "parent": did.data.id,
+        "description": "Protocols to verify users' reputation aross platforms.",
+        "companies": [
+            {
+                "name": "Interep",
+                "url": "https://interep.link/"
+            },
+            {
+                "name": "Unirep",
+                "url": "https://unirep.gitbook.io/unirep/"
+            },
+        ]
+    }
+};
+
 export default [
     did,
-    { "data": { "source": "Data sovereignty", "target": did.data.id, "id": "sov_did" }, "position": { "x": null, "y": null }, "group": "edges" },
-    { "data": { "source": did.data.id, "target": "governance", "id": "did_gov" }, "position": { "x": null, "y": null }, "group": "edges" },
+    reputation,
+    { "data": { "source": "data sovereignty", "target": did.data.id, "id": "sov_did" }, "group": "edges" },
+    { "data": { "source": reputation.data.id, "target": "decentralised social media", "id": "rep_socmed"}, "group": "edges" },
+    { "data": { "source": did.data.id, "target": "governance", "id": "did_gov" }, "group": "edges" },
+    { "data": { "source": did.data.id, "target": "decentralised society (DeSoc)", "id": "did_desoc" }, "group": "edges" },
 ];

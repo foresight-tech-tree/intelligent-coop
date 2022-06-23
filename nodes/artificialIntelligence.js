@@ -6,11 +6,8 @@ import securityAlignment from './artificialIntelligence/securityAlignment.js';
 
 const artificialIntelligence = {
     "data": {
-        "id": "artificial intelligence" 
-    },
-    "position": {
-        "x": 195.56340747734816,
-        "y": 484.3338177685355
+        "id": "artificial intelligence",
+        "nodeType": "coreTech"
     },
     "group": "nodes"
 };

@@ -1,7 +1,11 @@
+import dataAnalysis from "./openData/dataAnalysis.js";
+import dataMining from "./openData/dataMining.js";
+import datasets from "./openData/datasets.js";
+
 const openData = {
     "data": {
-        "id": "Open Data",
-        "parent": "data",
+        "id": "open data",
+        "parent": "open data",
         "description": "Data which is openly accessible, exploitable and shared by anyone for any purpose.",
         "history": [
             "1942 - Robert King Merton explained importance that result of research should be open",
@@ -9,7 +13,7 @@ const openData = {
             "2007 - While meeting of thirty thinkers aim to define concept of open public data ",
             "2009 - Nobel prize to Elinor Orstrom who showed the specificity of information commons",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "GitHub: Where the world builds software · GitHub",
                 "url": "https://github.com/"
@@ -69,14 +73,60 @@ const openData = {
                 "url": "https://blog.ldodds.com/2017/05/25/where-can-you-contribute-to-open-data-yes-you/"
             },
             {
-                "name": "Starting an Open Data Initiative | Data",
+                "name": "Starting an open data Initiative | Data",
                 "url": "http://opendatatoolkit.worldbank.org/en/starting.html"        
             },
         ],
         "resources": [],
+        "nodeType": "coreTech"
     }
 };
 
+
+const dataAvail = {
+    "data": {
+        "id": "data availability",
+        "parent": "open data",
+        "projects": [
+            {
+                "name": "Celestia",
+                "url": "https://celestia.org/"
+            },
+            {
+                "name": "Polygon Avail",
+                "url": "https://polygon.technology/solutions/polygon-avail/"
+            },
+            {
+                "name": "zkPorter",
+                "url": "https://zkporter.io/#/"
+            }
+        ],
+        "nodeType": "coreTech"
+    },
+};
+
+const datasets_deeplearning = {
+    "data": {
+        "source": "Datasets",
+        "target": "Deep learning",
+        "id": "datasets_deeplearning"
+    },
+    "group": "edges"
+}
+
 export default [
-    openData
-];
+    openData,
+    dataAvail,
+    {
+        "data": {
+            "source": "open data",
+            "target": "data sovereignty",
+            "id": "opendata_sov" 
+        },
+        "group": "edges"
+    },
+    datasets_deeplearning
+].concat(dataAnalysis)
+    .concat(dataMining)
+    .concat(datasets)
+    .flat();

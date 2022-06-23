@@ -1,7 +1,7 @@
 import artificialIntelligence from './nodes/artificialIntelligence.js';
 import decentralisation from './nodes/decentralisation.js';
 import privacy from './nodes/privacy.js';
-import data from './nodes/data.js';
+import openData from './nodes/openData.js';
 
 function makeList(strings) {
     return strings.reduce((result, str) => result + "• " + str + "<br/>", "");
@@ -12,70 +12,86 @@ function parseLink(obj) {
 }
 
 function parseNode(node) {
-    if (!node.data) {
-        console.log(node)
-    }
-    if (node.data.description) {
-        return {
-            "data": {
-                "id": node.data.id,
-                "parent": node.data.parent,
-                "description": node.data.description,
-                "history": makeList(node.data.history),
-                "companies": makeList(node.data.companies.map(parseLink)),
-                "labs": makeList(node.data.labs.map(parseLink)),
-                "people": makeList(node.data.people.map(parseLink)),
-                "involvement": makeList(node.data.involvement.map(parseLink)),
-                "resources": makeList(node.data.resources.map(parseLink)),
-            },
-            "group": "nodes"
-        };
-    } else {
+    // Node is an edge
+    if (node.data.source) {
         return node;
     }
+
+    let myNode = {};
+    let data = {};
+    data["id"] = node.data.id;
+
+    if (node.data.parent) {
+        data["parent"] = node.data.parent;
+    }
+    if (node.data.nodeType) {
+        data["nodeType"] = node.data.nodeType;
+    }
+    if (node.data.description) {
+        data["description"] = node.data.description;
+    }
+    if (node.data.history) {
+        data["history"] = makeList(node.data.history);
+    }
+    if (node.data.projects) {
+        data["projects"] = makeList(node.data.projects.map(parseLink));
+    }
+    if (node.data.labs) {
+        data["labs"] = makeList(node.data.labs.map(parseLink));
+    }
+    if (node.data.people) {
+        data["people"] = makeList(node.data.people.map(parseLink));
+    }
+    if (node.data.involvement) {
+        data["involvement"] = makeList(node.data.involvement.map(parseLink));
+    }
+    if (node.data.resources) {
+        data["resources"] = makeList(node.data.resources.map(parseLink));
+    }
+
+    myNode["data"] = data;
+    myNode["group"] = "nodes";
+
+    return myNode;
 }
 
 const nodes = artificialIntelligence
     .concat(decentralisation)
     .concat(privacy)
-    .concat(data)
+    .concat(openData)
     .flat()
     .concat(
         {
             "data": {
-                "id": "decentralised artificial intelligence"
+                "id": "decentralised artificial intelligence",
+                "nodeType": "frontier"
             },
             "group": "nodes"
         },
         {
             "data": {
-                "id": "private artificial intelligence"
+                "id": "private artificial intelligence",
+                "nodeType": "challenge"
             },
             "group": "nodes"
         },
         {
             "data": {
-                "id": "private decentralised computation"
+                "id": "private decentralised computation",
+                "nodeType": "challenge"
             },
             "group": "nodes"
         },
         {
             "data": {
-                "id": "Data sovereignty"
+                "id": "data sovereignty",
+                "nodeType": "application"
             },
             "group": "nodes"
         },
         {
             "data": {
-                "source": "Open Data",
-                "target": "Data sovereignty",
-                "id": "opendata_sov" 
-            },
-            "group": "edges"
-        },
-        {
-            "data": {
-                "source": "Data sovereignty",
+                "source": "data sovereignty",
                 "target": "decentralised identity (DID)",
                 "id": "sov_did" 
             },

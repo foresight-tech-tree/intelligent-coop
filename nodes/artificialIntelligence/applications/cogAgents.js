@@ -4,7 +4,7 @@ const cogAgents = {
         "parent": "applications",
         "description": "",
         "history": [],
-        "companies": [],
+        "projects": [],
         "labs": [],
         "people": [],
         "involvement": [],

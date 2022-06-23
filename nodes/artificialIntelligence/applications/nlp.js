@@ -10,7 +10,7 @@ const nlp = {
             "80s - Hey-day of symbolic methods in NLP",
             "1990s - 2010s - Introduction of machine learning algorithms for language processing",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Aigo.ai – Enterprise Chatbot with a Brain | Chatbot",
                 "url": "https://aigo.ai/"

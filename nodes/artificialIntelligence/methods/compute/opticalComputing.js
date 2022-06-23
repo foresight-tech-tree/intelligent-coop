@@ -10,7 +10,7 @@ const opticalComputing = {
             "2012 - First programmable nanophotonic processor",
             "2015 - Programmable nanophotonic processor preprint on arXiv",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Lightmatter - The photonic (super)computer company.",
                 "url": "https://lightmatter.co/"

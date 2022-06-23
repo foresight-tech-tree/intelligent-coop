@@ -1,13 +1,13 @@
 const aiLearning = {
     "data": {
         "id": "AI Learning",
-        "parent": "Education",
+        "parent": "education",
         "description": "The field tries to improve learning through using AI in for example intelligent tutoring systems, intelligent learning environments, adaptive hypertext systems, and computer supported collaborative learning systems.",
         "history": [
             "1980s - Designers transformed expert system design to develop systems which fullfil educational functions",
             "1990s - Emergence of second generation experts systems",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Knewton - Achievement Within Reach",
                 "url": "https://www.knewton.com/"

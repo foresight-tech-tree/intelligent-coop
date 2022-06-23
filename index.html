@@ -32,64 +32,67 @@
 </head>
 
 <body>
-  <h1>Intelligent Cooperation Tech Tree</h1>
+  <div style="font-size: xx-large"><b>Intelligent Cooperation Tech Tree</b></div>
   <div class="fright" id="cy"></div>
 
   <div class="fleft">
     <div class="menu-container">
-
-      <div class="accordion-container">
-        <div class="accordion">General</div>
-        <div class="panel">
-          <button id="graphml" onclick="document.getElementById('graphml-input').click();">
-            Import from GraphML file
-          </button>
-          <input id="graphml-input" type="file" name="name" style="display: none;" />
-          <input id="load-from-inp" type="file" name="name" style="display: none;" />
-
-          <button id="saveAsJson">Save as JSON</button>
-          <button id="loadFromJson">Load from JSON</button>
-        </div>
-      </div>
-
       <div class="accordion-container">
         <div class="accordion">Nodes</div>
         <div class="panel">
-          <button id="add-compound">Add compound for selected</button>
-          <button id="remove-compound">Remove selected compound</button>
-          <button id="collapseAll">Collapse all nodes</button>
-          <button id="expandAll">Expand all nodes</button>
-          <button id="collapseRecursively">Collapse selected recursively</button>
-          <button id="expandRecursively">Expand selected recursively</button>
+          <button style="font-family: 'Courier New', Courier, monospace; font-size: smaller;" id="add-compound">Add compound for selected</button>
+          <button style="font-family: 'Courier New', Courier, monospace; font-size: smaller;" id="expandAll">Expand all nodes</button>
+          <button style="font-family: 'Courier New', Courier, monospace; font-size: smaller;" id="remove-compound">Remove selected compound</button>
+          <button style="font-family: 'Courier New', Courier, monospace; font-size: smaller;" id="collapseAll">Collapse all nodes</button>
         </div>
       </div>
+
+      <br><b>Legend:</b><br>
+      🟢 Core Technology <br>
+      🔵 Application <br>
+      🟡 Frontier Technology <br>
+      🔴 Challenge <br>
 
     </div>
   </div>
 
   <div id="offcanvas-overlay" uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar">
-        <h3><span id="node-title"></span></h3>
+        <b><span id="node-title" style="font-size: x-large"></span></b>
 
-        <h4>Description:</h4>
+        <br><br>
+        <b><span style="font-size: large">description:</span></b>
+        <br>
         <span id="node-description"></span>
 
-        <h4>History:</h4>
+        <br><br>
+        <b><span style="font-size: large">history:</span></b>
+        <br>
         <span id="node-history"></span>
 
-        <h4>Companies:</h4>
-        <span id="node-companies"></span>
+        <br><br>
+        <b><span style="font-size: large">projects:</span></b>
+        <br>
+        <span id="node-projects"></span>
 
-        <h4>Labs:</h4>
+        <br><br>
+        <b><span style="font-size: large">labs:</span></b>
+        <br>
         <span id="node-labs"></span>
 
-        <h4>Key opinion leaders:</h4>
+        <br><br>
+        <b><span style="font-size: large">key opinion leaders:</span></b>
+        <br>
         <span id="node-people"></span>
 
-        <h4>Ways to get involved:</h4>
+        <br><br>
+        <b><span style="font-size: large">ways to get involved:</span></b>
+        <br>
         <span id="node-involvement"></span>
 
-        <h4>Resources:</h4>
+        <br><br>
+        <b><span style="font-size: large">resources:</span></b>
+        <br>
         <span id="node-resources"></span>
     </div>
   </div>

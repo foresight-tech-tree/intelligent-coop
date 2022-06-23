@@ -4,7 +4,7 @@ const aiSecurityTechnical = {
         "parent": "security / alignment",
         "description": "",
         "history": [],
-        "companies": [],
+        "projects": [],
         "labs": [],
         "people": [],
         "involvement": [],

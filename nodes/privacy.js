@@ -5,18 +5,25 @@ import mpc from './privacy/mpc.js';
 const general = {
     "data": {
         "id": "general private computation",
-        "parent": "private computation"
+        "parent": "private computation",
+        "nodeType": "challenge",
     }
 };
 
 const privacy = [
-    { "data": { "id": "private computation"}, "position": { "x": null, "y": null }, "group": "nodes" },
+    {
+        "data": {
+            "id": "private computation",
+            "nodeType": "frontier",
+        },
+        "group": "nodes"
+    },
     zkp,
     fhe,
     mpc,
     general,
-    { "data": { "source": "zero-knowledge virtual machines", "target": general.data.id, "id": "zkvm_general" }, "position": { "x": null, "y": null }, "group": "edges" },
-    { "data": { "source": general.data.id, "target": "private artificial intelligence", "id": "priv_ai" }, "position": { "x": null, "y": null }, "group": "edges" },
+    { "data": { "source": "zero-knowledge virtual machines", "target": general.data.id, "id": "zkvm_general" }, "group": "edges" },
+    { "data": { "source": general.data.id, "target": "private artificial intelligence", "id": "priv_ai" }, "group": "edges" },
 ];
 
 export default privacy;

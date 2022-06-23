@@ -7,7 +7,7 @@ const aixi = {
             "2000- First proposal from Marcus Hutter",
             "2005 - Several results regarding AIXI are proved in Hutter’s 2005 book Universal Artificial Intelligence"
         ],
-        "companies": [],
+        "projects": [],
         "labs": [],
         "people": [
             {

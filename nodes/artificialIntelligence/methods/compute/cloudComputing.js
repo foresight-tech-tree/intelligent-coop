@@ -8,7 +8,7 @@ const cloudComputing = {
             "1977 - Cloud symbol represents networks of computing equipment",
             "1993 - Term cloud was used to refer to platforms for distributed computing",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "H2O AI Cloud | H2O.ai",
                 "url": "https://h2o.ai/platform/ai-cloud/"

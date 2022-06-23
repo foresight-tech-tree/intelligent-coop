@@ -7,7 +7,7 @@ const dnaComputing = {
             "1994 - Leonard Adleman solved first algorithmic problem with DNA computing",
             "1995 - Eric Baum proposes DNA computing as memory system",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "CATALOG",
                 "url": "https://www.catalogdna.com/"
@@ -90,7 +90,7 @@ const dnaComputing = {
 const dna_bio = {
     "data": {
         "source": dnaComputing.data.id,
-        "target": "Bioinformatics",
+        "target": "bioinformatics",
         "id": "dna_bio"
     }
 };

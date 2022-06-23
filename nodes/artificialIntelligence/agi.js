@@ -11,7 +11,7 @@ const agi = {
             "1993 - 2011 - Used successfully throughout the technology industry",
             "2011 - present Deep learning, big data and artificial general intelligence",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Vicarious",
                 "url": "https://www.vicarious.com"
@@ -99,7 +99,8 @@ const agi = {
                 "url": "https://www.eleuther.ai/"
             },
         ],
-        "resources": [],    
+        "resources": [],
+        "nodeType": "challenge",
     }
 }
 
@@ -110,13 +111,15 @@ export default [
             "source": "Reinforcement learning",
             "target": "Artificial General Intelligence",
             "id": "reinforcement_agi"
-        }
+        },
+        "group": "edges"
     },
     {
         "data": {
             "source": "security / alignment",
             "target": "Artificial General Intelligence",
             "id": "security_agi"
-        }
+        },
+        "group": "edges"
     },
 ];

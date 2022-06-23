@@ -8,7 +8,7 @@ const computerVision = {
             "1970s - formed the early foundations of many computer vision algorithms which exist today",
             "1990s - changes through increased interactions between the fields of computer graphics and computer vision",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Anduril | Military use",
                 "url": "https://www.anduril.com/"

@@ -1,12 +1,12 @@
 const bioinformatics = {
     "data": {
-        "id": "Bioinformatics",
+        "id": "bioinformatics",
         "parent": "applications",
         "description": "Field which develops methods and software tools for understanding biological data",
         "history": [
             "1970 - Paulien Hogeweg and Ben Hesper coined it 1970"
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Isomorphic Labs | Home, Drug discovery",
                 "url": "https://www.isomorphiclabs.com/"
@@ -100,6 +100,7 @@ const bioinformatics = {
                 "url": "https://blog.benchsci.com/startups-using-artificial-intelligence-in-drug-discovery"
             },
         ],
+        "nodeType": "coreTech",
     }
 }
 

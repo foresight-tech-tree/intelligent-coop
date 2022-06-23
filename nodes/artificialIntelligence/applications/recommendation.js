@@ -7,7 +7,7 @@ const recommendation = {
             "1990 - First mentioned by Jussi Karlgren",
             "1994 - Implemented at scale",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "Smart Product Recommendation - Stridely Solutions",
                 "url": "https://www.stridelysolutions.com/smart-product-recommendation/"

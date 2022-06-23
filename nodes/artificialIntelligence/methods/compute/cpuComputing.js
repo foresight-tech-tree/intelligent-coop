@@ -9,7 +9,7 @@ const cpuComputing = {
             "1964 - IBM introduced computer architecture that was used in series of computers based on transistors",
             "1971 - Introduction first commercially available micro processor",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "AMD",
                 "url": "https://www.amd.com/en"

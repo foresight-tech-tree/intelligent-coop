@@ -1,14 +1,14 @@
 const dataMining = {
     "data": {
         "id": "Data Mining",
-        "parent": "data",
+        "parent": "open data",
         "description": "Extracting and discovering patterns in large data sets.",
         "history": [
             "1960s - Economists used terms like data fishing or data dredging to refer what they considered bad practice of analyzing data without an a-priori hypothesis.",
             "1990 - Term data mining appeared in database community generally with positive connotations.",
             "1996 - Usama Fayyad launched journal by Kluwer called Data Mining and Knowledge Discovery",
         ],
-        "companies": [
+        "projects": [
             {
                 "name": "WCKD RZR - Unlocking the potential of the world’s data",
                 "url": "https://www.wckdrzr.com/"
