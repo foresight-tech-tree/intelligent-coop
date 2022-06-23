@@ -5,7 +5,7 @@ import progressStudies from "./education/progressStudies.js";
 const education = [
     {
         "data": {
-            "id": "Education",
+            "id": "education",
             "parent": "artificial intelligence"
         }
     },

@@ -99,7 +99,8 @@ const agi = {
                 "url": "https://www.eleuther.ai/"
             },
         ],
-        "resources": [],    
+        "resources": [],
+        "nodeType": "challenge",
     }
 }
 

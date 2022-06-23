@@ -1,6 +1,6 @@
 const bioinformatics = {
     "data": {
-        "id": "Bioinformatics",
+        "id": "bioinformatics",
         "parent": "applications",
         "description": "Field which develops methods and software tools for understanding biological data",
         "history": [
@@ -100,6 +100,7 @@ const bioinformatics = {
                 "url": "https://blog.benchsci.com/startups-using-artificial-intelligence-in-drug-discovery"
             },
         ],
+        "nodeType": "coreTech",
     }
 }
 

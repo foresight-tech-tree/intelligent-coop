@@ -1,7 +1,7 @@
 const mlHackathons = {
     "data": {
         "id": "ML hackathons",
-        "parent": "Education",
+        "parent": "education",
         "description": "People work in a sprint torwards a ML related problem to solve it.",
         "history": [],
         "projects": [],

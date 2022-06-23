@@ -109,7 +109,7 @@ const quantumComputing = {
 const qc_bio = {
     "data": {
         "source": quantumComputing.data.id,
-        "target": "Bioinformatics",
+        "target": "bioinformatics",
         "id": "qc_bio"
     }
 };

@@ -7,7 +7,12 @@ import recommendation from './applications/recommendation.js'
 import xr_ai from './applications/xr_ai.js'
 
 const applications = [
-    { "data": { "id": "applications", "parent": "artificial intelligence" } },
+    {
+        "data": {
+            "id": "applications",
+            "parent": "artificial intelligence"
+        }
+    },
     bioinformatics,
     cogAgents,
     computerVision,

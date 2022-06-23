@@ -90,7 +90,7 @@ const dnaComputing = {
 const dna_bio = {
     "data": {
         "source": dnaComputing.data.id,
-        "target": "Bioinformatics",
+        "target": "bioinformatics",
         "id": "dna_bio"
     }
 };

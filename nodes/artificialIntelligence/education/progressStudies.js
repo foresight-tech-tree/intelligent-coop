@@ -1,7 +1,7 @@
 const progressStudies = {
     "data": {
         "id": "Progress studies",
-        "parent": "Education",
+        "parent": "education",
         "description": "Is the study of the causes of civilizational progress.",
         "history": [
             "2019 - Coining of term progress studies"
