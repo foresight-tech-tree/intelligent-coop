@@ -1,7 +1,7 @@
 import artificialIntelligence from './nodes/artificialIntelligence.js';
 import decentralisation from './nodes/decentralisation.js';
 import privacy from './nodes/privacy.js';
-import data from './nodes/data.js';
+import openData from './nodes/openData.js';
 
 function makeList(strings) {
     return strings.reduce((result, str) => result + "• " + str + "<br/>", "");
@@ -23,6 +23,9 @@ function parseNode(node) {
 
     if (node.data.parent) {
         data["parent"] = node.data.parent;
+    }
+    if (node.data.nodeType) {
+        data["nodeType"] = node.data.nodeType;
     }
     if (node.data.description) {
         data["description"] = node.data.description;
@@ -48,9 +51,6 @@ function parseNode(node) {
 
     myNode["data"] = data;
     myNode["group"] = "nodes";
-    if (node.nodeType) {
-        myNode["nodeType"] = node.nodeType;
-    }
 
     return myNode;
 }
@@ -58,30 +58,34 @@ function parseNode(node) {
 const nodes = artificialIntelligence
     .concat(decentralisation)
     .concat(privacy)
-    .concat(data)
+    .concat(openData)
     .flat()
     .concat(
         {
             "data": {
-                "id": "decentralised artificial intelligence"
+                "id": "decentralised artificial intelligence",
+                "nodeType": "frontier"
             },
             "group": "nodes"
         },
         {
             "data": {
-                "id": "private artificial intelligence"
+                "id": "private artificial intelligence",
+                "nodeType": "challenge"
             },
             "group": "nodes"
         },
         {
             "data": {
-                "id": "private decentralised computation"
+                "id": "private decentralised computation",
+                "nodeType": "challenge"
             },
             "group": "nodes"
         },
         {
             "data": {
-                "id": "data sovereignty"
+                "id": "data sovereignty",
+                "nodeType": "application"
             },
             "group": "nodes"
         },
