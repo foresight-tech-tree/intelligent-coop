@@ -5,12 +5,19 @@ import mpc from './privacy/mpc.js';
 const general = {
     "data": {
         "id": "general private computation",
-        "parent": "private computation"
+        "parent": "private computation",
+        "nodeType": "challenge",
     }
 };
 
 const privacy = [
-    { "data": { "id": "private computation"}, "group": "nodes" },
+    {
+        "data": {
+            "id": "private computation",
+            "nodeType": "frontier",
+        },
+        "group": "nodes"
+    },
     zkp,
     fhe,
     mpc,

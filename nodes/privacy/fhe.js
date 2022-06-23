@@ -2,7 +2,8 @@ const partial = {
     "data": {
         "id": "partially homomorphic encryption",
         "parent": "private computation",
-        "description": "Partially homomorphic encryption allows only select mathematical functions to be performed homomorphically on encrypted values."
+        "description": "Partially homomorphic encryption allows only select mathematical functions to be performed homomorphically on encrypted values.",
+        "nodeType": "coreTech",
     }
 };
 
@@ -16,9 +17,9 @@ const fhe = {
                 "name": "Zama",
                 "url": "https://www.zama.ai/"
             }
-        ]
+        ],
+        "nodeType": "challenge",
     },
-    "nodeType": "futureTech"
 };
 
 export default [

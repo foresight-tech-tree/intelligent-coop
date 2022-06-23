@@ -1,7 +1,8 @@
 const zkp = {
     "data": {
         "id": "zero-knowledge proofs",
-        "parent": "private computation"
+        "parent": "private computation",
+        "nodeType": "coreTech",
     }
 };
 
@@ -23,7 +24,8 @@ const recursive = {
                 "name": "Nova",
                 "url": "https://github.com/microsoft/Nova"
             },
-        ]
+        ],
+        "nodeType": "coreTech",
     },
 };
 
@@ -45,7 +47,8 @@ const zkvm = {
                 "name": "Starkware (Cairo VM)",
                 "url": "https://starkware.co/tech-stack/"
             }
-        ]
+        ],
+        "nodeType": "coreTech",
     }
 };
 
@@ -59,7 +62,8 @@ const setMembership = {
                 "name": "Semaphore",
                 "url": "https://github.com/semaphore-protocol/semaphore/"
             }
-        ]
+        ],
+        "nodeType": "application",
     }
 };
 
