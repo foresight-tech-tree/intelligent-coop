@@ -85,7 +85,7 @@ const nodes = artificialIntelligence
         {
             "data": {
                 "id": "decentralised data governance",
-                "nodeType": "application"
+                "nodeType": "challenge"
             },
             "group": "nodes"
         },
