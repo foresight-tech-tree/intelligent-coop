@@ -3,7 +3,7 @@ const partial = {
         "id": "partially homomorphic encryption",
         "parent": "private computation",
         "description": "Partially homomorphic encryption allows only select mathematical functions to be performed homomorphically on encrypted values.",
-        "nodeType": "coreTech",
+        "nodeType": "core",
     }
 };
 

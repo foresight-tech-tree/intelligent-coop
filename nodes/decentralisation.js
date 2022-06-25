@@ -1,4 +1,3 @@
-import did from './decentralisation/did.js';
 import defi from './decentralisation/defi.js';
 import desci from './decentralisation/desci.js';
 import desoc from './decentralisation/desoc.js';
@@ -11,11 +10,16 @@ const decentralisation = [
     {
         "data": {
             "id": "decentralised infrastructure",
-            "nodeType": "coreTech"
+            "resources": [
+                {
+                    "name": "Decentralized Tech ecosystem map (a project of the Digital Life Collective)",
+                    "id": "https://kumu.io/DigLife/decentralized-tech"
+                }
+            ],
+            "nodeType": "core"
         },
         "group": "nodes"
     },
-    did,
     defi,
     desci,
     desoc,

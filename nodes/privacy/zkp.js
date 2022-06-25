@@ -2,7 +2,7 @@ const zkp = {
     "data": {
         "id": "zero-knowledge proofs",
         "parent": "private computation",
-        "nodeType": "coreTech",
+        "nodeType": "core",
     }
 };
 
@@ -25,7 +25,7 @@ const recursive = {
                 "url": "https://github.com/microsoft/Nova"
             },
         ],
-        "nodeType": "coreTech",
+        "nodeType": "core",
     },
 };
 
@@ -48,7 +48,7 @@ const zkvm = {
                 "url": "https://starkware.co/tech-stack/"
             }
         ],
-        "nodeType": "coreTech",
+        "nodeType": "core",
     }
 };
 
@@ -64,6 +64,14 @@ const setMembership = {
             }
         ],
         "nodeType": "application",
+    }
+};
+
+const vdf = {
+    "data": {
+        "id": "verifiable delay function",
+        "parent": "private computation",
+        "description": "A serial function that takes a verifiably long time to compute, but is quick to verify."
     }
 };
 

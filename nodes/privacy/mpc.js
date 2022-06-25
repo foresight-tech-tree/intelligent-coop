@@ -5,4 +5,14 @@ const mpc = {
     }
 };
 
-export default mpc;
+const garbled = {
+    "data": {
+        "id": "garbled circuits",
+        "parent": "private computation"
+    }
+}
+
+export default [
+    mpc,
+    garbled
+];

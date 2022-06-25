@@ -1,6 +1,6 @@
 const deepLearning = {
     "data": {
-        "id": "Deep learning",
+        "id": "deep learning",
         "parent": "methods",
         "description": "Class of machine learning algorithms which uses multiple layers to progressively extract higher-level features from the raw input.",
         "history": [

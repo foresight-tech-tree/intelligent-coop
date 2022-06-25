@@ -1,11 +1,12 @@
 import dataAnalysis from "./openData/dataAnalysis.js";
 import dataMining from "./openData/dataMining.js";
 import datasets from "./openData/datasets.js";
+import dataStorage from "./openData/dataStorage.js";
 
 const openData = {
     "data": {
         "id": "open data",
-        "parent": "open data",
+        "parent": "decentralised data governance",
         "description": "Data which is openly accessible, exploitable and shared by anyone for any purpose.",
         "history": [
             "1942 - Robert King Merton explained importance that result of research should be open",
@@ -77,8 +78,13 @@ const openData = {
                 "url": "http://opendatatoolkit.worldbank.org/en/starting.html"        
             },
         ],
-        "resources": [],
-        "nodeType": "coreTech"
+        "resources": [
+            {
+                "name": "The State of Open Data 2021",
+                "url": "https://digitalscience.figshare.com/articles/report/The_State_of_Open_Data_2021/17061347"
+            }
+        ],
+        "nodeType": "core"
     }
 };
 
@@ -86,7 +92,7 @@ const openData = {
 const dataAvail = {
     "data": {
         "id": "data availability",
-        "parent": "open data",
+        "parent": openData.data.id,
         "projects": [
             {
                 "name": "Celestia",
@@ -101,14 +107,28 @@ const dataAvail = {
                 "url": "https://zkporter.io/#/"
             }
         ],
-        "nodeType": "coreTech"
+        "nodeType": "core"
     },
 };
+
+const dataCuration = {
+    "data": {
+        "id": "data curation",
+        "parent": openData.data.id,
+        "projects": [
+            {
+                "name": "4TU.ResearchData",
+                "url": "https://data.4tu.nl/info/en/"
+            }
+        ],
+        "nodeType": "core"
+    },
+}
 
 const datasets_deeplearning = {
     "data": {
         "source": "Datasets",
-        "target": "Deep learning",
+        "target": "deep learning",
         "id": "datasets_deeplearning"
     },
     "group": "edges"
@@ -117,10 +137,11 @@ const datasets_deeplearning = {
 export default [
     openData,
     dataAvail,
+    dataCuration,
     {
         "data": {
             "source": "open data",
-            "target": "data sovereignty",
+            "target": "decentralised data governance",
             "id": "opendata_sov" 
         },
         "group": "edges"
@@ -129,4 +150,5 @@ export default [
 ].concat(dataAnalysis)
     .concat(dataMining)
     .concat(datasets)
+    .concat(dataStorage)
     .flat();

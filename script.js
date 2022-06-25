@@ -1,5 +1,4 @@
 import nodes from './nodes.js';
-import data from './nodes/openData.js';
 
 function readTxtFile(file, cb) {
   const fileReader = new FileReader();
@@ -45,7 +44,7 @@ function addParentNode(idSuffix, parent = undefined) {
 
 function main() {
   const nodeStyles = {
-    "coreTech": { "color": "lightgreen" },
+    "core": { "color": "lightgreen" },
     "frontier": { "color": "#FFF380" },
     "application": { "color": "lightskyblue" },
     "challenge": { "color": "palevioletred" },

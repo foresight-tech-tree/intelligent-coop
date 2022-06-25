@@ -20,7 +20,7 @@ const applications = [
     patternRecognition,
     recommendation,
     xr_ai,
-    { "data": { "source": "Deep learning", "target": "Recommendation systems", "id": "deeplearning_recs" }},
+    { "data": { "source": "deep learning", "target": "Recommendation systems", "id": "deeplearning_recs" }},
 ];
 
 export default applications;
