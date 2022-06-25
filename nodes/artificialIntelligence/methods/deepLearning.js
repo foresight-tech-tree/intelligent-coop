@@ -108,7 +108,8 @@ const deepLearning = {
                 "name": "Deep Learning - John D. Kelleher",
                 "url": "https://mitpress.mit.edu/books/deep-learning-1"
             },
-        ]
+        ],
+        "nodeType": "core",
     },
 };
 

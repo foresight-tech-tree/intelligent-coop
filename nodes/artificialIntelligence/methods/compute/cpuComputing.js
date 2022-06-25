@@ -69,6 +69,7 @@ const cpuComputing = {
             },
         ],
         "resources": [],
+        "nodeType": "core",
     }
 };
 

@@ -80,6 +80,7 @@ const aiAccelerator = {
                 "url": "https://www.researchgate.net/publication/342024767_NANO-CHIPS_2030_On-Chip_AI_for_an_Efficient_Data-Driven_World_On-Chip_AI_for_an_Efficient_Data-Driven_World"
             },
         ],
+        "nodeType": "core",
     }
 };
 

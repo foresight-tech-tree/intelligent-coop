@@ -9,7 +9,8 @@ import quantumComputing from './compute/quantumComputing.js'
 const compute = {
     "data": {
         "id": "compute",
-        "parent": "methods"
+        "parent": "methods",
+        "nodeType": "core",
     }
 };
 

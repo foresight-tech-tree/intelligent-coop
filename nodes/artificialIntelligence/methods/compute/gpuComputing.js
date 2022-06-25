@@ -79,6 +79,7 @@ const gpuComputing = {
             },
         ],
         "resources": [],
+        "nodeType": "core",
     }
 };
 

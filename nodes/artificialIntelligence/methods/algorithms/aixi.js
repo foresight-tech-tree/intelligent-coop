@@ -31,6 +31,7 @@ const aixi = {
                 "url": "https://www.lesswrong.com/tag/aixi",
             },
         ],
+        "nodeType": "core",
     }
 };
 

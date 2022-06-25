@@ -67,6 +67,7 @@ const pluralPrivacy = {
         "id": "programmable plural privacy",
         "parent": desoc.data.id,
         "description": "A paradigm where privacy as privacy is treated as a programmable, loosely coupled bundle of rights to permission access, alter or profit from information.",
+        "projects": [],
         "nodeType": "core",
     }
 };
@@ -132,17 +133,24 @@ const publicGoods = {
         "id": "public goods funding",
         "parent": desoc.data.id,
         "description": "Mechanisms to raise funds for public goods (e.g. open-source client code, protocol research, documentation, community-building)",
+        "nodeType": "application",
+    }
+};
+
+const retroactive = {
+    "data": {
+        "id": "retroactive public goods funding",
+        "parent": publicGoods.data.id,
         "projects": [
-            {
-                "name": "MolochDAO",
-                "url": "https://molochdao.com/"
-            },
             {
                 "name": "Retroactive Public Goods Funding (Optimism)",
                 "url": "https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c"
             },
+            {
+                "name": "Filecoin Community PR",
+                "url": "https://research.protocol.ai/blog/2022/a-public-goods-experiment-on-filecoin-retroactively-funding-impact-with-quadratic-voting/"
+            }
         ],
-        "nodeType": "application",
     }
 };
 
@@ -196,6 +204,7 @@ export default [
     sybil,
     socialMedia,
     publicGoods,
+    retroactive,
     verifiableCredentials,
     did,
     reputation,
@@ -206,7 +215,7 @@ export default [
     { "data": { "source": "decentralised data governance", "target": did.data.id, "id": "sov_did" }, "group": "edges" },
     { "data": { "source": quadFunding.data.id, "target": publicGoods.data.id, "id": "quad_public" }, "group": "edges" },
     { "data": { "source": reputation.data.id, "target": "decentralised social media", "id": "rep_socmed"}, "group": "edges" },
-    { "data": { "source": did.data.id, "target": "governance", "id": "did_gov" }, "group": "edges" },
+    { "data": { "source": did.data.id, "target": "decentralised governance", "id": "did_gov" }, "group": "edges" },
     { "data": { "source": did.data.id, "target": "decentralised society (DeSoc)", "id": "did_desoc" }, "group": "edges" },
     { "data": { "source": sbt.data.id, "target": provenance.data.id, "id": "sbt_provenance" }, "group": "edges" },
     { "data": { "source": sbt.data.id, "target": socialRecovery.data.id, "id": "sbt_socrecovery" }, "group": "edges" },

@@ -87,7 +87,8 @@ const opticalComputing = {
                 "name": "Introduction of Optical Computing - GeeksforGeeks, Read intro in optical computing",
                 "url": "https://www.geeksforgeeks.org/introduction-of-optical-computing/"
             }
-        ],    
+        ],
+        "nodeType": "frontier",
     }
 };
 

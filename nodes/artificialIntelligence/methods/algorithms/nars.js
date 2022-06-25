@@ -50,7 +50,8 @@ const nars = {
                 "name": "Non-Axiomatic Logic",
                 "url": "https://www.worldscientific.com/worldscibooks/10.1142/8665"
             },
-        ],    
+        ],
+        "nodeType": "frontier",
     }
 };
 

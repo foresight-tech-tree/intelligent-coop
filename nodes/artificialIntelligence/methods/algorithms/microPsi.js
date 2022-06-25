@@ -51,19 +51,11 @@ const microPsi = {
                 "name": "Principles of Synthetic Intelligence PSI: An Architecture of Motivated Cognition = Joscha Bach",
                 "url": "https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780195370676.001.0001/acprof-9780195370676"
             },
-        ],    
-    }
-};
-
-const micropsi_cog = {
-    "data": {
-        "source": microPsi.data.id,
-        "target": "Cognitive agents",
-        "id": "micropsi_cog"
+        ],
+        "nodeType": "core",
     }
 };
 
 export default [
     microPsi,
-    micropsi_cog
 ];

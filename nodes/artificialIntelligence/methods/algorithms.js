@@ -10,7 +10,8 @@ import soar from "./algorithms/soar.js";
 const algorithms = {
     "data": {
         "id": "algorithms & architectures",
-        "parent": "methods"
+        "parent": "methods",
+        "nodeType": "core",
     }
 };
 

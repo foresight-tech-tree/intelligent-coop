@@ -43,6 +43,7 @@ const actR = {
                 "url": "https://global.oup.com/academic/product/how-can-the-human-mind-occur-in-the-physical-universe-9780195324259?q=american%20architecture&lang=en&cc=us"
             },
         ],
+        "nodeType": "frontier",
     }
 };
 

@@ -92,6 +92,7 @@ const nlp = {
                 "url": "https://github.com/keon/awesome-nlp"
             },
         ],
+        "nodeType": "core",
     }
 }
 

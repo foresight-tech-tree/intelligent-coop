@@ -92,7 +92,8 @@ const cloudComputing = {
                 "url": "https://vast.ai/console/host/setup/"
             },
         ],
-        "resources": []    ,
+        "resources": [],
+        "nodeType": "core",
     }
 };
 

@@ -35,6 +35,7 @@ const badger = {
                 "url": "https://arxiv.org/abs/1912.01513"
             },
         ],
+        "nodeType": "frontier",
     }
 };
 
