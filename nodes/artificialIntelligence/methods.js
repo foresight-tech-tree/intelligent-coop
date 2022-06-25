@@ -6,7 +6,8 @@ import reinforcementLearning from "./methods/reinforcementLearning.js";
 const methods = {
     "data": {
         "id": "methods",
-        "parent": "artificial intelligence"
+        "parent": "artificial intelligence",
+        "nodeType": "core",
     }
 };
 

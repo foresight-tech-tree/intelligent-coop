@@ -81,6 +81,7 @@ const languageModels = {
                 "url": "https://github.com/karpathy/minGPT"
             },
         ],
+        "nodeType": "core",
     }
 };
 

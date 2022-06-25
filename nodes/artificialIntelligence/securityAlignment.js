@@ -7,7 +7,8 @@ const securityAlignment = [
     {
         "data": {
             "id": "security / alignment",
-            "parent": "artificial intelligence"
+            "parent": "artificial intelligence",
+            "nodeType": "challenge"
         }
     },
 ];

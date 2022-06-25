@@ -103,6 +103,7 @@ const quantumComputing = {
                 "url": "https://medium.com/qiskit/the-hitchhiking-cats-guide-to-getting-a-job-in-quantum-computing-da7e3bb9ff64"
             },
         ],
+        "nodeType": "frontier",
     }
 };
 

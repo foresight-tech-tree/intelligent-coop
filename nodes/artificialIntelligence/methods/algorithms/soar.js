@@ -78,6 +78,7 @@ const soar = {
                 "url": "https://mitpress.mit.edu/books/soar-cognitive-architecture",
             },
         ],
+        "nodeType": "core",
     }
 };
 

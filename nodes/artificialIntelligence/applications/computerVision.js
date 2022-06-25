@@ -90,6 +90,7 @@ const computerVision = {
                 "url": "https://github.com/jbhuang0604/awesome-computer-vision"
             }
         ],
+        "nodeType": "core",
     }
 }
 

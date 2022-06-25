@@ -185,6 +185,21 @@ const prediction = {
     }
 }
 
+const mev = {
+    "data": {
+        "id": "maximal extractable value (MEV)",
+        "parent": defi.data.id,
+        "description": "Maximal extractable value (MEV) refers to the maximum value that can be extracted from block production in excess of the standard block reward and gas fees by including, excluding, and changing the order of transactions in a block.",
+        "projects": [
+            {
+                "name": "Flashbots",
+                "url": "https://docs.flashbots.net/"
+            },
+        ],
+        "nodeType": "challenge",
+    }
+};
+
 export default [
     defi,
     dex,
@@ -195,6 +210,7 @@ export default [
     derivative,
     insurance,
     prediction,
+    mev,
     { "data": { "source": "verifiable reputation", "target": undercollaterised.data.id, "id": "ver_under" }, "group": "edges" },
     { "data": { "source": credit.data.id, "target": undercollaterised.data.id, "id": "credit_under" }, "group": "edges" },
     { "data": { "source": undercollaterised.data.id, "target": commLending.data.id, "id": "under_comm" }, "group": "edges" },

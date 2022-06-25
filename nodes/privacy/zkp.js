@@ -9,7 +9,7 @@ const zkp = {
 const recursive = {
     "data": {
         "id": "recursive SNARKs",
-        "parent": "private computation",
+        "parent": zkp.data.id,
         "description": "A protocol in which each SNARK proof can verify a previous instance of a SNARK proof.",
         "projects": [
             {
@@ -28,6 +28,27 @@ const recursive = {
         "nodeType": "core",
     },
 };
+
+const ivc = {
+    "data": {
+        "id": "incrementally verifiable computation (IVC)",
+        "parent": "private computation",
+        "description": "An efficient verifiable computation that can be verified at any intermediate point in the computation. The proof at each step is generated efficiently by updating the previous proof, without recomputing the entire proof from scratch.",
+        "resources": [
+            {
+                "name": "Incrementally Verifiable Computation or Proofs of Knowledge Imply Time/Space Efficiency",
+                "url": "https://link.springer.com/chapter/10.1007/978-3-540-78524-8_1"
+            }
+        ]
+    }
+}
+
+const pcd = {
+    "data": {
+        "id": "proof-carrying data (PCD)",
+        "parent": "private computation",
+    }
+}
 
 const zkvm = {
     "data": {
@@ -48,7 +69,7 @@ const zkvm = {
                 "url": "https://starkware.co/tech-stack/"
             }
         ],
-        "nodeType": "core",
+        "nodeType": "application",
     }
 };
 
@@ -67,20 +88,16 @@ const setMembership = {
     }
 };
 
-const vdf = {
-    "data": {
-        "id": "verifiable delay function",
-        "parent": "private computation",
-        "description": "A serial function that takes a verifiably long time to compute, but is quick to verify."
-    }
-};
-
 export default [
     zkp,
     recursive,
     zkvm,
     setMembership,
+    ivc,
+    pcd,
     { "data": { "source": zkp.data.id, "target": recursive.data.id, "id": "zkp_recursive" }, "group": "edges" },
+    { "data": { "source": recursive.data.id, "target": ivc.data.id, "id": "rec_ivc" }, "group": "edges" },
+    { "data": { "source": recursive.data.id, "target": pcd.data.id, "id": "rec_pcd" }, "group": "edges" },
     { "data": { "source": zkp.data.id, "target": zkvm.data.id, "id": "zkp_zkvm" }, "group": "edges" },
     { "data": { "source": zkp.data.id, "target": setMembership.data.id, "id": "zkp_setmembership" }, "group": "edges" },
     { "data": { "source": setMembership.data.id, "target": "anti-collusion", "id": "zkp_anticollusion" }, "group": "edges" },

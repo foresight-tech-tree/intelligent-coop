@@ -1,7 +1,9 @@
 const governance = {
     "data": {
-        "id": "governance",
-        "parent": "decentralised infrastructure"
+        "id": "decentralised governance",
+        "parent": "decentralised infrastructure",
+        "description": "Protocols for collective decision-making by stakeholders and participants in a community.",
+        "nodeType": "challenge",
     }
 };
 

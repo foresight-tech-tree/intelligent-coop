@@ -84,6 +84,7 @@ const patternRecognition = {
                 "url": "https://www.geeksforgeeks.org/pattern-recognition-introduction"
             },
         ],
+        "nodeType": "core"
     }
 }
 

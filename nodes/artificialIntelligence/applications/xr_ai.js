@@ -108,6 +108,7 @@ const xr_ai = {
                 "url": "https://helsinkixrcenter.com/xr-research-group-index"
             }
         ],
+        "nodeType": "application"
     }
 }
 

@@ -60,6 +60,7 @@ const openCog = {
             } 
         ],
         "resources": [],
+        "nodeType": "frontier",
     }
 };
 

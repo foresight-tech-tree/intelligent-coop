@@ -103,7 +103,8 @@ const reinforcementLearning = {
                 "name": "Reinforcement Learning: An Introduction (Adaptive Computation and Machine Learning series): Sutton, Richard S., Barto, Andrew G.",
                 "url": "https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf"
             },
-        ]
+        ],
+        "nodeType": "core",
     },
 };
 

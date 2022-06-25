@@ -1,5 +1,4 @@
 import bioinformatics from './applications/bioinformatics.js'
-import cogAgents from './applications/cogAgents.js'
 import computerVision from './applications/computerVision.js'
 import nlp from './applications/nlp.js'
 import patternRecognition from './applications/patternRecognition.js'
@@ -10,11 +9,11 @@ const applications = [
     {
         "data": {
             "id": "applications",
-            "parent": "artificial intelligence"
+            "parent": "artificial intelligence",
+            "nodeType": "application",
         }
     },
     bioinformatics,
-    cogAgents,
     computerVision,
     nlp,
     patternRecognition,

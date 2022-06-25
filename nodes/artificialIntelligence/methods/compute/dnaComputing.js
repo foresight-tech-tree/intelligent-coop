@@ -84,6 +84,7 @@ const dnaComputing = {
                 "url": "https://github.com/AkashGutha/D-Compute"
             },
         ],
+        "nodeType": "frontier",
     }
 };
 

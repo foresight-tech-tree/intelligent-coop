@@ -1,3 +1,13 @@
+const scaling = {
+    "data": {
+        "id": "scaling",
+        "parent": "decentralised infrastructure",
+        "description": "Mechanisms to increase throughput on resource-constrained execution environments.",
+        "nodeType": "challenge"
+    },
+    "group": "nodes"
+};
+
 const zkrollup = {
     "data": {
         "id": "zkRollups",
@@ -76,10 +86,10 @@ const succinctBlockchain = {
 };
 
 export default [
+    scaling,
     zkrollup,
     optimisticRollup,
     succinctBlockchain,
-    { "data": {"id": "scaling", "parent": "decentralised infrastructure" }, "group": "nodes" },
     { "data": { "source": "data availability", "target": zkrollup.data.id, "id": "avail_zkrollup" }, "group": "edges" },
     { "data": { "source": "data availability", "target": optimisticRollup.data.id, "id": "avail_optirollup" }, "group": "edges" },
     { "data": { "source": "zero-knowledge proofs", "target": zkrollup.data.id, "id": "zkp_zkr" }, "group": "edges" },
