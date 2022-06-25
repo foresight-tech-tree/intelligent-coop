@@ -71,14 +71,14 @@ const nodes = artificialIntelligence
         {
             "data": {
                 "id": "private artificial intelligence",
-                "nodeType": "challenge"
+                "nodeType": "frontier"
             },
             "group": "nodes"
         },
         {
             "data": {
                 "id": "private decentralised computation",
-                "nodeType": "challenge"
+                "nodeType": "frontier"
             },
             "group": "nodes"
         },
