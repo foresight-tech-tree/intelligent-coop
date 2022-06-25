@@ -1,7 +1,7 @@
 const dataStorage = {
     "data": {
         "id": "decentralised data storage",
-        "parent": "open data",
+        "parent": "decentralised data governance",
         "description": "Data is encrypted and stored across multiple locations, or nodes, that are run by individuals or organizations that share their extra disk space for a fee. Only the data's owner holds the private encryption key; storage providers cannot access the data. In many cases, the files are also sharded and spread across multiple locations, providing yet another layer of storage security.",
         "projects": [
             {

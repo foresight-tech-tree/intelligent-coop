@@ -1,7 +1,7 @@
-import dataAnalysis from "./openData/dataAnalysis.js";
-import dataMining from "./openData/dataMining.js";
-import datasets from "./openData/datasets.js";
-import dataStorage from "./openData/dataStorage.js";
+import dataAnalysis from "./dataGov/dataAnalysis.js";
+import dataMining from "./dataGov/dataMining.js";
+import datasets from "./dataGov/datasets.js";
+import dataStorage from "./dataGov/dataStorage.js";
 
 const openData = {
     "data": {
@@ -92,7 +92,7 @@ const openData = {
 const dataAvail = {
     "data": {
         "id": "data availability",
-        "parent": openData.data.id,
+        "parent": "decentralised data governance",
         "projects": [
             {
                 "name": "Celestia",
@@ -114,7 +114,7 @@ const dataAvail = {
 const dataCuration = {
     "data": {
         "id": "data curation",
-        "parent": openData.data.id,
+        "parent": "decentralised data governance",
         "projects": [
             {
                 "name": "4TU.ResearchData",

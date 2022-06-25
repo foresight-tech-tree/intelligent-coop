@@ -1,7 +1,7 @@
 const dataAnalysis = {
     "data": {
         "id": "Data Analysis",
-        "parent": "open data",
+        "parent": "decentralised data governance",
         "description": "Process of inspecting, cleansing, transforming and modelling data with the goal of useful information, informing conclusions and supporting decision-making.",
         "history": [
             "C 18000 BCE - Humans using tally sticks for analyzing data",

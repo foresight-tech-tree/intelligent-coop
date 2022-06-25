@@ -1,7 +1,7 @@
 import artificialIntelligence from './nodes/artificialIntelligence.js';
 import decentralisation from './nodes/decentralisation.js';
 import privacy from './nodes/privacy.js';
-import openData from './nodes/openData.js';
+import openData from './nodes/dataGov.js';
 
 function makeList(strings) {
     return strings.reduce((result, str) => result + "• " + str + "<br/>", "");
