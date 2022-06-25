@@ -2,12 +2,7 @@ const agi = {
     "data": {
         "id": "Artificial General Intelligence",
         "parent": "artificial intelligence",
-        "description": "Ability of an intelligent agent to understand or learn any intellectual task that a human being can.",
-        "history": [
-            "1950s - First generation of AI researcher were convinced that artificial intelligence was possible",
-            "1970s - AI winter",
-            "1980s - Knowledge became focus of mainstream AI",
-            "1987 - 1993 - AI winter",
+        "description": "Ability of an intelligent agent to rjflsjf
             "1993 - 2011 - Used successfully throughout the technology industry",
             "2011 - present Deep learning, big data and artificial general intelligence",
         ],
