@@ -3,11 +3,6 @@ const dao = {
         "id": "decentralised autonomous organisations (DAO)",
         "parent": "decentralised society (DeSoc)",
         "description": "Virtual communities that come together around a common purpose, coordinated by voting through smart contracts on a public blockchain. These communities feature collective ownership and decision-making.",
-        "history": [
-            "DAOs draw on a long tradition of cooperatives, intentional communities, solidarity networks, mutual aid, decmocratic ownership, and other examples of economic coordination.",
-            "1844 - The Rochdale Society of Equitable Pioneers, a British consumer cooperative, is formed to exapand access to quality food and provisions among skilled workers forced out of work by mechanisation.",
-            "1929 - During the Great Depression, Americans carved out alternative networks of barter and value exchange, such as The Unemployed Exchange Association of Oakland."
-        ],
         "resources": [
             {
                 "name": "A Prehistory of DAOs (2021) - Kei Kreutler",
@@ -83,7 +78,7 @@ const grantDao = {
     "data": {
         "id": "grant DAOs",
         "parent": dao.data.id,
-        "description": "A DAO that pools and distributes funds to innovative projects that serve the decentralised community.",
+        "description": "A DAO that pools and distributes funds to projects.",
         "projects": [
             {
                 "name": "Aave Grants DAO",
@@ -96,7 +91,11 @@ const grantDao = {
             {
                 "name": "OceanDAO Grants",
                 "url": "https://oceanprotocol.com/dao"
-            }
+            },
+            {
+                "name": "VitaDAO",
+                "url": "https://www.vitadao.com/"
+            },
         ],
         "nodeType": "application"
     }
@@ -121,7 +120,7 @@ const socialDao = {
     "data": {
         "id": "social DAOs",
         "parent": dao.data.id,
-        "description": "A DAO that votes to decide changes in a technology protocol.",
+        "description": "A digitally native tribe consisting of people with similar interests.",
         "projects": [
             {
                 "name": "Friends With Benefits",
@@ -136,6 +135,26 @@ const socialDao = {
     }
 };
 
+const impactDao = {
+    "data": {
+        "id": "impact DAOs",
+        "parent": dao.data.id,
+        "description": "A DAO that votes to decide changes in a technology protocol.",
+        "projects": [
+            {
+                "name": "Friends With Benefits",
+                "url": "https://www.fwb.help/"
+            },
+            {
+                "name": "Seed Club",
+                "url": "https://www.seedclub.xyz/"
+            },
+        ],
+        "nodeType": "application"
+    }
+
+};
+
 export default [
     dao,
     protocolDao,
@@ -144,5 +163,6 @@ export default [
     professionalDao,
     investmentDao,
     collectorDao,
+    impactDao,
     { "data": { "source": grantDao.data.id, "target": "public goods funding", "id": "dao_pub" }, "group": "edges" },
 ];

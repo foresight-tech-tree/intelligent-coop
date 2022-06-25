@@ -84,14 +84,14 @@ const nodes = artificialIntelligence
         },
         {
             "data": {
-                "id": "data sovereignty",
+                "id": "decentralised data governance",
                 "nodeType": "application"
             },
             "group": "nodes"
         },
         {
             "data": {
-                "source": "data sovereignty",
+                "source": "decentralised data governance",
                 "target": "decentralised identity (DID)",
                 "id": "sov_did" 
             },

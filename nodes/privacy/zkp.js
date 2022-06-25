@@ -67,6 +67,14 @@ const setMembership = {
     }
 };
 
+const vdf = {
+    "data": {
+        "id": "verifiable delay function",
+        "parent": "private computation",
+        "description": "A serial function that takes a verifiably long time to compute, but is quick to verify."
+    }
+};
+
 export default [
     zkp,
     recursive,
