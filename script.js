@@ -190,10 +190,10 @@ function main() {
         selector: 'edge',
         style: {
           'width': 3,
-          'line-color': 'silver',
+          'line-color': '#696969',
           'curve-style': 'taxi',
           'target-arrow-shape': 'triangle',
-          'target-arrow-color': 'silver'
+          'target-arrow-color': '#696969'
         }
       },
       {

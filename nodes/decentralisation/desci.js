@@ -166,7 +166,10 @@ export default [
     replication,
     peerReview,
     arcs,
+    { "data": { "source": "decentralised data storage", "target": digitalLab.data.id, "id": "storage_lab" }, "group": "edges" },
+    { "data": { "source": "data curation", "target": scientometrics.data.id, "id": "curate_metrics" }, "group": "edges" },
     { "data": { "source": "open data", "target": researchObjects.data.id, "id": "open_research" }, "group": "edges" },
+    { "data": { "source": researchObjects.data.id, "target": verifiedResearch.data.id, "id": "res_ver" }, "group": "edges" },
     { "data": { "source": "grant DAOs", "target": funding.data.id, "id": "dao_fund" }, "group": "edges" },
     { "data": { "source": "professional DAOs", "target": arcs.data.id, "id": "dao_arc" }, "group": "edges" },
 ].concat(

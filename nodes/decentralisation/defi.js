@@ -195,7 +195,9 @@ export default [
     derivative,
     insurance,
     prediction,
-    { "data": { "source": "verifiable reputation", "target": undercollaterised.data.id, "id": "rep_under" }, "group": "edges" },
-    { "data": { "source": credit.data.id, "target": undercollaterised.data.id, "id": "rep_under" }, "group": "edges" },
-    { "data": { "source": undercollaterised.data.id, "target": commLending.data.id, "id": "rep_under" }, "group": "edges" },
+    { "data": { "source": "verifiable reputation", "target": undercollaterised.data.id, "id": "ver_under" }, "group": "edges" },
+    { "data": { "source": credit.data.id, "target": undercollaterised.data.id, "id": "credit_under" }, "group": "edges" },
+    { "data": { "source": undercollaterised.data.id, "target": commLending.data.id, "id": "under_comm" }, "group": "edges" },
+    { "data": { "source": "Sybil resistance", "target": undercollaterised.data.id, "id": "sybil_under" }, "group": "edges" },
+    { "data": { "source": "decentralised identity (DID)", "target": undercollaterised.data.id, "id": "did_under" }, "group": "edges" },
 ];

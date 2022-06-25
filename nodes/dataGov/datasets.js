@@ -1,7 +1,7 @@
 const datasets = {
     "data": {
         "id": "Datasets",
-        "parent": "open data",
+        "parent": "decentralised data governance",
         "description": "Collection of data.",
         "history": [
             "1936 - First data set 'Iris data set'"
